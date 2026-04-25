@@ -31,20 +31,20 @@ export default function HomePage() {
         <div className="absolute bottom-10 -left-20 w-96 h-96 bg-aqua/30 rounded-full blur-3xl animate-float" style={{ animationDelay: "1.5s" }} />
 
         <div className="relative container mx-auto px-4 py-32 text-white">
-          <div className="max-w-3xl animate-fade-up">
+          <div className="max-w-3xl mx-auto text-center animate-fade-up">
             <span className="inline-block glass px-4 py-2 rounded-full text-sm font-semibold mb-6 text-white">
               💧 Water King — Trusted Borehole Experts
             </span>
             <h1 className="text-4xl sm:text-5xl md:text-7xl font-black leading-[1.05] mb-4 tracking-tight drop-shadow-[0_4px_20px_rgba(0,0,0,0.6)]">
-              <span className="block text-white">ZAMBHARAT</span>
               <span className="block text-yellow-300" style={{ WebkitTextStroke: "1px rgba(0,0,0,0.25)" }}>
-                DRILLTECH LIMITED
+                ZAMBHARAT
               </span>
+              <span className="block text-white">DRILLTECH LIMITED</span>
             </h1>
             <p className="text-xl md:text-2xl text-white/90 mb-8 font-light">
               Water King — Borehole &amp; Drilling Experts
             </p>
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-wrap gap-4 justify-center">
               <Link to="/contact" className="bg-gradient-sunset px-8 py-4 rounded-full font-bold shadow-water hover:scale-105 transition flex items-center gap-2">
                 Get a Quote <ArrowRight className="h-5 w-5" />
               </Link>

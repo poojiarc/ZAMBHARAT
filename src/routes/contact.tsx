@@ -3,6 +3,7 @@ import { Helmet } from "react-helmet-async";
 import { MapPin, Mail, Phone, User, Send, MessageSquare } from "lucide-react";
 import { services } from "@/data/services";
 import { useReveal } from "@/hooks/use-reveal";
+import { SocialLinks } from "@/components/SocialLinks";
 
 const phones = ["0777 777 337", "0777 777 266", "0777 777 127", "097 246 6666", "077 944 6666", "077 944 9999"];
 const emails = ["zambharatdrilltech@gmail.com", "zambharatagrotec@gmail.com", "svgboreholes@gmail.com"];
@@ -110,6 +111,18 @@ export default function ContactPage() {
           <a href="https://maps.app.goo.gl/aqinB5kRfaXg2t6A9" target="_blank" rel="noreferrer" className="mt-4 inline-flex items-center gap-2 text-primary font-semibold hover:text-accent transition">
             <MapPin className="h-4 w-4" /> Open in Google Maps
           </a>
+        </div>
+      </section>
+
+      <section className="container mx-auto px-4 pb-20">
+        <div className="reveal bg-gradient-hero text-white rounded-3xl p-10 md:p-14 text-center shadow-water">
+          <h2 className="text-3xl md:text-4xl font-black mb-3">Follow Us</h2>
+          <p className="text-white/85 max-w-xl mx-auto mb-6">
+            Stay connected with Water King on social media for project updates, drilling tips and behind-the-scenes.
+          </p>
+          <div className="flex justify-center">
+            <SocialLinks variant="light" />
+          </div>
         </div>
       </section>
     </div>
