@@ -36,11 +36,9 @@ export function Navbar() {
                 scrolled ? "" : "drop-shadow-[0_2px_6px_rgba(0,0,0,0.5)]"
               }`}
             >
-              <span className="text-[#253284]">ZA</span>
-              <span className="bg-gradient-to-r from-[#F97316] to-[#EF4444] bg-clip-text text-transparent">
-                MBHARAT
-              </span>
-              <span className={scrolled ? "text-primary" : "text-white"}>
+              <span className={scrolled ? "text-[#253284]" : "text-white"}>ZAM</span>
+              <span className="text-[#F97316]">BHARAT</span>
+              <span className={scrolled ? "text-[#253284]" : "text-white"}>
                 {" "}DRILLTECH
               </span>
             </div>

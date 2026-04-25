@@ -12,9 +12,9 @@ export function Footer() {
             <img src={logo} alt="Logo" className="h-14 w-14 rounded-full ring-2 ring-white/40" />
             <div>
               <div className="font-bold">
-                <span className="text-[#3F51B5]">ZA</span>
+                <span className="text-[#3F51B5]">ZAM</span>
                 <span className="bg-gradient-to-r from-[#F97316] to-[#EF4444] bg-clip-text text-transparent">
-                  MBHARAT
+                  BHARAT
                 </span>
                 {" DRILLTECH"}
               </div>
@@ -30,7 +30,7 @@ export function Footer() {
         <div>
           <h4 className="font-bold mb-4">Quick Links</h4>
           <ul className="space-y-2 text-sm">
-            {[{to:"/",l:"Home",I:Home},{to:"/services",l:"Services",I:Wrench},{to:"/about",l:"About",I:Info},{to:"/contact",l:"Contact",I:Phone}].map(({to,l,I})=>(
+            {[{ to: "/", l: "Home", I: Home }, { to: "/services", l: "Services", I: Wrench }, { to: "/about", l: "About", I: Info }, { to: "/contact", l: "Contact", I: Phone }].map(({ to, l, I }) => (
               <li key={to}>
                 <Link to={to} className="flex items-center gap-2 text-white/85 hover:text-accent transition">
                   <I className="h-4 w-4" /> {l}
