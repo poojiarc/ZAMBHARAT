@@ -1,12 +1,11 @@
 import { Link } from "@tanstack/react-router";
 import { Home, Wrench, Info, Phone, Mail, MapPin, Facebook, Heart } from "lucide-react";
-import { services } from "@/data/services";
 import logo from "@/assets/logo.png";
 
 export function Footer() {
   return (
     <footer className="bg-gradient-hero text-white mt-20">
-      <div className="container mx-auto px-4 py-14 grid gap-10 md:grid-cols-4">
+      <div className="container mx-auto px-4 py-14 grid gap-10 md:grid-cols-3">
         <div>
           <div className="flex items-center gap-3 mb-4">
             <img src={logo} alt="Logo" className="h-14 w-14 rounded-full ring-2 ring-white/40" />
@@ -15,9 +14,10 @@ export function Footer() {
               <div className="text-xs text-accent">Water King</div>
             </div>
           </div>
-          <p className="text-sm text-white/80">
-            Borehole drilling, water solutions and mineral exploration experts across Zambia.
+          <p className="text-sm text-white/80 mb-3">
+            Drilling Excellence, Delivering Water — your reliable borehole experts in Zambia.
           </p>
+          <p className="text-xs text-accent italic">"Water Solutions You Can Trust"</p>
         </div>
 
         <div>
@@ -27,19 +27,6 @@ export function Footer() {
               <li key={to}>
                 <Link to={to} className="flex items-center gap-2 text-white/85 hover:text-accent transition">
                   <I className="h-4 w-4" /> {l}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </div>
-
-        <div>
-          <h4 className="font-bold mb-4">Services</h4>
-          <ul className="space-y-2 text-sm">
-            {services.slice(0,6).map((s) => (
-              <li key={s.slug}>
-                <Link to="/services/$slug" params={{ slug: s.slug }} className="text-white/85 hover:text-accent transition">
-                  {s.title}
                 </Link>
               </li>
             ))}
@@ -61,13 +48,23 @@ export function Footer() {
         </div>
       </div>
 
-      <div className="border-t border-white/15">
-        <div className="container mx-auto px-4 py-5 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-white/80">
-          <p>© {new Date().getFullYear()} ZAMBHARATDRILL TECH LIMITED. All rights reserved.</p>
-          <p className="flex items-center gap-1.5">
-            Made with <Heart className="h-3.5 w-3.5 text-accent fill-accent" /> by
-            <a href="#" className="font-semibold text-accent hover:underline ml-1">StaffArc</a>
-          </p>
+      <div className="container mx-auto px-4 mt-4 pt-8 pb-8 border-t border-white/10 flex flex-col gap-3 justify-center items-center text-xs text-white/60 text-center">
+        <div>© {new Date().getFullYear()} ZAMBHARATDRILL TECH LIMITED. All rights reserved.</div>
+        <div className="flex justify-center items-center gap-1">
+          Made with <Heart className="inline h-4 w-4 text-red-500 mx-1 fill-red-500" /> by
+          <a
+            href="https://staffarc.in"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-1 text-orange-400 hover:underline ml-1"
+          >
+            <img
+              src="https://www.staffarc.in/images/Staffarc-logo.png"
+              alt="StaffArc logo"
+              className="h-5 w-5 object-contain"
+            />
+            StaffArc
+          </a>
         </div>
       </div>
     </footer>
