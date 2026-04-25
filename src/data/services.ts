@@ -10,6 +10,9 @@ export type Service = {
   title: string;
   short: string;
   description: string;
+  whatWeDo?: string;
+  applications?: string[];
+  technology?: string[];
   icon: "Search" | "Droplets" | "Wrench" | "Building2" | "Mountain" | "Cog";
   image: string;
   benefits: string[];
@@ -20,127 +23,164 @@ export const services: Service[] = [
   {
     slug: "geophysical-survey",
     title: "Geophysical Survey",
-    short: "Accurate underground water detection using advanced geophysical methods.",
+    short: "Identify the most suitable borehole location with scientific subsurface analysis.",
     description:
-      "Our geophysical survey service uses resistivity meters and electromagnetic instruments to locate underground aquifers with precision. We identify the most productive drilling points before a single hole is sunk, saving you time and money.",
+      "Our geophysical survey service helps identify the most suitable location for borehole drilling by analyzing underground water presence using scientific techniques.",
+    whatWeDo:
+      "We use advanced equipment to study subsurface conditions, ensuring accurate detection of groundwater sources before drilling begins.",
     icon: "Search",
     image: survey,
     benefits: [
-      "Pinpoint accurate water sources",
-      "Reduce dry-hole risk dramatically",
-      "Detailed site reports & recommendations",
-      "Save costs on drilling",
+      "Reduces drilling risk",
+      "Saves time and cost",
+      "Improves success rate",
+      "Accurate water source identification",
     ],
     process: [
-      { step: "Site Assessment", detail: "On-site inspection and terrain analysis." },
-      { step: "Data Collection", detail: "Resistivity & electromagnetic readings." },
-      { step: "Interpretation", detail: "Expert geologists analyse subsurface data." },
-      { step: "Reporting", detail: "Detailed report with recommended drill points." },
+      { step: "Site Inspection", detail: "On-site terrain and access assessment." },
+      { step: "Data Collection", detail: "Readings taken with geophysical tools." },
+      { step: "Analysis", detail: "Underground water levels analysed by experts." },
+      { step: "Final Report", detail: "Detailed report with recommended drilling point." },
     ],
   },
   {
     slug: "water-borehole-drilling",
-    title: "Water Borehole Drilling",
-    short: "Professional borehole drilling up to 300 metres with modern rigs.",
+    title: "Water Borehole Drilling (Up to 300 Meters)",
+    short: "Professional borehole drilling up to 300 metres using modern machinery.",
     description:
-      "We drill clean, high-yield water boreholes up to 300 metres deep using state-of-the-art rotary and DTH rigs. From domestic to commercial and agricultural projects, we deliver reliable water sources built to last.",
+      "We provide professional borehole drilling services up to 300 meters using modern machinery and efficient techniques.",
+    whatWeDo:
+      "Our team ensures precise drilling to reach reliable underground water sources suitable for long-term use.",
+    applications: [
+      "Residential water supply",
+      "Agricultural irrigation",
+      "Industrial water systems",
+      "Commercial properties",
+    ],
     icon: "Droplets",
     image: borehole,
     benefits: [
-      "Depths up to 300 metres",
-      "Modern DTH and rotary rigs",
-      "Casing and screening included",
-      "Yield & quality testing",
+      "Deep and reliable water access",
+      "Long-lasting water supply",
+      "Suitable for all soil types",
+      "High success rate",
     ],
     process: [
-      { step: "Mobilisation", detail: "Rig deployed to your site." },
-      { step: "Drilling", detail: "Precision drilling to target depth." },
-      { step: "Casing", detail: "Steel/PVC casing and gravel pack installed." },
-      { step: "Development", detail: "Borehole flushed, tested and certified." },
+      { step: "Site Preparation", detail: "Rig and equipment positioned for drilling." },
+      { step: "Drilling Operation", detail: "Precision drilling to target depth." },
+      { step: "Casing Installation", detail: "Steel/PVC casing fitted to protect the well." },
+      { step: "Water Testing", detail: "Yield and quality tested before completion." },
     ],
   },
   {
     slug: "pump-installation",
     title: "Hand Pump & Submersible Pump Installation",
-    short: "Complete pump supply, installation and maintenance services.",
+    short: "Complete supply, installation and maintenance of hand and submersible pumps.",
     description:
-      "We supply and install both hand pumps and submersible pumps from leading brands. Our technicians size and configure each system to match your borehole yield and water demand for years of trouble-free service.",
+      "We supply and install high-quality hand pumps and submersible pump systems for efficient water extraction.",
+    whatWeDo:
+      "We provide complete pump solutions, including installation, testing, and maintenance support.",
+    applications: [
+      "Hand Pumps — for rural and low-cost solutions",
+      "Submersible Pumps — for deep boreholes and high demand",
+    ],
     icon: "Wrench",
     image: pump,
     benefits: [
-      "Brand-name pumps and parts",
-      "Solar-ready submersible options",
-      "Professional installation",
-      "After-sales maintenance support",
+      "Reliable water flow",
+      "Energy-efficient systems",
+      "Durable and long-lasting",
+      "Easy maintenance",
     ],
     process: [
-      { step: "Pump Sizing", detail: "Select the right pump for your yield." },
+      { step: "Pump Selection", detail: "Based on borehole depth and water demand." },
       { step: "Installation", detail: "Pump, riser, cabling and controls fitted." },
-      { step: "Commissioning", detail: "Full system test and handover." },
-      { step: "Support", detail: "Ongoing maintenance and warranty." },
+      { step: "Testing", detail: "Full system test and commissioning." },
+      { step: "User Guidance", detail: "Training and after-sales support." },
     ],
   },
   {
     slug: "overhead-tank-construction",
-    title: "Overhead Tank Construction",
-    short: "Sturdy overhead water storage tank towers built to spec.",
+    title: "Construction of Overhead Tanks",
+    short: "Strong, durable overhead tanks designed for steady water supply.",
     description:
-      "We design and build overhead water storage tanks and steel towers tailored to your capacity and pressure needs — perfect for households, schools, farms and industrial sites that need reliable gravity-fed water supply.",
+      "We design and construct strong and durable overhead tanks for water storage and distribution.",
+    whatWeDo:
+      "Our tanks are built to ensure safe storage and steady water supply for homes, businesses, and farms.",
+    applications: [
+      "Residential buildings",
+      "Farms and irrigation systems",
+      "Commercial facilities",
+    ],
     icon: "Building2",
     image: tank,
     benefits: [
-      "Custom heights and capacities",
-      "Engineered steel towers",
-      "Plumbing and distribution included",
-      "Long-lasting corrosion protection",
+      "Continuous water availability",
+      "Proper water pressure",
+      "Durable construction",
+      "Custom designs based on requirements",
     ],
     process: [
-      { step: "Design", detail: "Capacity and tower height engineered." },
-      { step: "Foundation", detail: "Reinforced concrete base poured." },
-      { step: "Erection", detail: "Steel tower and tank installed." },
-      { step: "Plumbing", detail: "Pipework connected and tested." },
+      { step: "Design Planning", detail: "Capacity and tower height engineered." },
+      { step: "Material Selection", detail: "High-grade steel and components sourced." },
+      { step: "Construction", detail: "Tower and tank built and installed." },
+      { step: "Quality Inspection", detail: "Final checks and handover." },
     ],
   },
   {
     slug: "core-drilling",
     title: "Core Drilling for Mineral Exploration",
-    short: "Precision core drilling for mining and mineral exploration projects.",
+    short: "Specialized core drilling for mineral exploration and geological studies.",
     description:
-      "Our diamond core drilling services deliver intact rock samples for accurate geological analysis. We support mining, mineral exploration and geotechnical investigations across Zambia and the region.",
+      "We offer specialized core drilling services for mineral exploration and geological studies.",
+    whatWeDo:
+      "Our advanced drilling techniques extract core samples from the earth for detailed analysis.",
+    applications: [
+      "Mining companies",
+      "Geological research",
+      "Resource evaluation",
+    ],
     icon: "Mountain",
     image: core,
     benefits: [
-      "High-quality intact core recovery",
-      "NQ, HQ and PQ sizes available",
-      "Experienced exploration crews",
-      "Detailed core logging support",
+      "Accurate geological data",
+      "Reliable mineral exploration",
+      "Supports mining projects",
+      "High precision drilling",
     ],
     process: [
-      { step: "Planning", detail: "Drill program designed with geologists." },
-      { step: "Set-up", detail: "Rig positioned and pad prepared." },
-      { step: "Coring", detail: "Continuous core extracted and boxed." },
-      { step: "Handover", detail: "Cores logged and delivered." },
+      { step: "Site Assessment", detail: "Drill program designed with geologists." },
+      { step: "Core Drilling", detail: "Continuous core extracted from target depth." },
+      { step: "Sample Extraction", detail: "Cores boxed and labelled on site." },
+      { step: "Analysis & Reporting", detail: "Cores logged and report delivered." },
     ],
   },
   {
     slug: "mud-drilling",
     title: "Mud Drilling & New Technology Machine Drilling",
-    short: "Modern mud rotary drilling for soft and unstable formations.",
+    short: "Modern mud rotary drilling for stable, efficient operation in tough terrains.",
     description:
-      "Combining classic mud rotary techniques with the latest drilling technology, we tackle challenging formations efficiently. Our modern rigs ensure clean borehole walls and excellent water yield, even in difficult ground.",
+      "We utilize modern drilling techniques including mud drilling and advanced machinery for efficient and effective operations.",
+    whatWeDo:
+      "Mud drilling helps stabilize the borehole and improve drilling efficiency in challenging soil conditions.",
+    technology: [
+      "Advanced drilling rigs",
+      "Mud circulation systems",
+      "Precision drilling tools",
+    ],
     icon: "Cog",
     image: mud,
     benefits: [
-      "Effective in soft formations",
-      "Stable, clean borehole walls",
-      "Latest-generation machinery",
-      "Faster project turnaround",
+      "Suitable for difficult terrains",
+      "Faster drilling process",
+      "Improved borehole stability",
+      "Higher efficiency",
     ],
     process: [
-      { step: "Site Prep", detail: "Mud pits and supply lines set up." },
-      { step: "Circulation", detail: "Drilling fluid keeps walls stable." },
-      { step: "Drilling", detail: "Target depth reached efficiently." },
-      { step: "Completion", detail: "Borehole cleaned and finalised." },
+      { step: "Site Preparation", detail: "Pads and supply lines set up." },
+      { step: "Mud System Setup", detail: "Mud pits and circulation lines configured." },
+      { step: "Drilling Execution", detail: "Drilling carried out with stable walls." },
+      { step: "Final Completion", detail: "Borehole cleaned and finalised." },
     ],
   },
 ];
