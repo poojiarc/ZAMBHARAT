@@ -68,6 +68,29 @@ function ServiceDetail() {
             <p className="text-muted-foreground text-lg leading-relaxed">{service.description}</p>
           </div>
 
+          {service.whatWeDo && (
+            <div className="reveal">
+              <h2 className="text-2xl md:text-3xl font-black mb-4 text-foreground">What We Do</h2>
+              <p className="text-muted-foreground text-lg leading-relaxed">{service.whatWeDo}</p>
+            </div>
+          )}
+
+          {(service.applications || service.technology) && (
+            <div className="reveal">
+              <h2 className="text-2xl md:text-3xl font-black mb-4 text-foreground">
+                {service.applications ? "Applications" : "Technology Used"}
+              </h2>
+              <div className="grid sm:grid-cols-2 gap-3">
+                {(service.applications ?? service.technology ?? []).map((item) => (
+                  <div key={item} className="flex items-start gap-3 bg-card border border-border rounded-xl p-4">
+                    <CheckCircle2 className="h-5 w-5 text-accent shrink-0 mt-0.5" />
+                    <span className="text-sm text-foreground">{item}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+
           <div className="reveal">
             <h2 className="text-2xl md:text-3xl font-black mb-6 text-foreground">Our Process</h2>
             <div className="grid sm:grid-cols-2 gap-4">
