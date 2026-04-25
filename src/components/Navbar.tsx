@@ -29,10 +29,16 @@ export function Navbar() {
     >
       <nav className="container mx-auto flex items-center justify-between px-4 py-3">
         <Link to="/" className="flex items-center gap-3 group">
-          <img src={logo} alt="Zambharat Drilltech Limited" className="h-12 w-12 rounded-full ring-2 ring-primary/30 group-hover:ring-primary transition" />
+          <img src={logo} alt="Zambharat Drilltech Limited" className="h-12 w-12 rounded-full ring-2 ring-white/60 group-hover:ring-accent transition shadow-md" />
           <div className="hidden sm:block leading-tight">
-            <div className="font-bold text-primary text-sm">ZAMBHARAT DRILLTECH</div>
-            <div className="text-xs text-accent font-semibold">Water King</div>
+            <div
+              className={`font-black text-base tracking-tight transition-colors ${
+                scrolled ? "text-primary" : "text-white drop-shadow-[0_2px_6px_rgba(0,0,0,0.5)]"
+              }`}
+            >
+              ZAMBHARAT DRILLTECH
+            </div>
+            <div className="text-xs text-accent font-bold drop-shadow-[0_1px_3px_rgba(0,0,0,0.4)]">Water King</div>
           </div>
         </Link>
 
@@ -43,7 +49,9 @@ export function Navbar() {
               to={to}
               activeOptions={{ exact: to === "/" }}
               activeProps={{ className: "bg-primary text-primary-foreground" }}
-              className="flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium text-foreground hover:bg-primary/10 transition"
+              className={`flex items-center gap-2 px-4 py-2 rounded-full text-sm font-semibold transition hover:bg-white/15 ${
+                scrolled ? "text-foreground hover:bg-primary/10" : "text-white drop-shadow"
+              }`}
             >
               <Icon className="h-4 w-4" />
               {label}
