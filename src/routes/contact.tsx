@@ -5,11 +5,10 @@ import { services } from "@/data/services";
 import { useReveal } from "@/hooks/use-reveal";
 import { SocialLinks } from "@/components/SocialLinks";
 
-const phones = ["0777 777 337", "0777 777 266", "0777 777 127", "097 246 6666", "077 944 6666", "077 944 9999"];
-const emails = ["zambharatdrilltech@gmail.com", "zambharatagrotec@gmail.com", "svgboreholes@gmail.com"];
+const phones = ["0777 777 337", "0777 777 266", "0777 777 127"];
+const emails = ["zambharatdrilltech@gmail.com"];
 const locations = [
   "Plot No. 29, Acacia Avenue, Avondale, Lusaka",
-  "Plot No. 25986, Katimamulilo Rd, Olympia Park",
 ];
 
 export default function ContactPage() {

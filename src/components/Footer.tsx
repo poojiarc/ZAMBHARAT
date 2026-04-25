@@ -11,7 +11,13 @@ export function Footer() {
           <div className="flex items-center gap-3 mb-4">
             <img src={logo} alt="Logo" className="h-14 w-14 rounded-full ring-2 ring-white/40" />
             <div>
-              <div className="font-bold">ZAMBHARAT DRILLTECH</div>
+              <div className="font-bold">
+                <span className="text-[#3F51B5]">ZA</span>
+                <span className="bg-gradient-to-r from-[#F97316] to-[#EF4444] bg-clip-text text-transparent">
+                  MBHARAT
+                </span>
+                {" DRILLTECH"}
+              </div>
               <div className="text-xs text-accent">Water King</div>
             </div>
           </div>

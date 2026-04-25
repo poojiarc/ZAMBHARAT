@@ -36,8 +36,11 @@ export default function HomePage() {
               💧 Water King — Trusted Borehole Experts
             </span>
             <h1 className="text-4xl sm:text-5xl md:text-7xl font-black leading-[1.05] mb-4 tracking-tight drop-shadow-[0_4px_20px_rgba(0,0,0,0.6)]">
-              <span className="block text-yellow-300" style={{ WebkitTextStroke: "1px rgba(0,0,0,0.25)" }}>
-                ZAMBHARAT
+              <span className="block drop-shadow-[0_4px_10px_rgba(255,255,255,0.2)]">
+                <span className="text-[#3F51B5]">ZA</span>
+                <span className="bg-gradient-to-r from-[#F97316] to-[#EF4444] bg-clip-text text-transparent">
+                  MBHARAT
+                </span>
               </span>
               <span className="block text-white">DRILLTECH LIMITED</span>
             </h1>
