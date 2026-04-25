@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { ScrollToTop } from "@/components/ScrollToTop";
+import { FloatingWhatsApp } from "@/components/FloatingWhatsApp";
 
 import HomePage from "@/routes/index";
 import AboutPage from "@/routes/about";
@@ -39,6 +40,7 @@ export default function App() {
         </Routes>
       </main>
       <Footer />
+      <FloatingWhatsApp />
     </BrowserRouter>
   );
 }
