@@ -40,9 +40,11 @@ function HomePage() {
             <span className="inline-block glass px-4 py-2 rounded-full text-sm font-semibold mb-6 text-white">
               💧 Water King — Trusted Borehole Experts
             </span>
-            <h1 className="text-4xl sm:text-5xl md:text-7xl font-black leading-tight mb-4 tracking-tight">
-              ZAMBHARAT<br />
-              <span className="bg-gradient-to-r from-accent to-yellow-300 bg-clip-text text-transparent">DRILLTECH LIMITED</span>
+            <h1 className="text-4xl sm:text-5xl md:text-7xl font-black leading-[1.05] mb-4 tracking-tight drop-shadow-[0_4px_20px_rgba(0,0,0,0.6)]">
+              <span className="block text-white">ZAMBHARAT</span>
+              <span className="block text-yellow-300" style={{ WebkitTextStroke: "1px rgba(0,0,0,0.25)" }}>
+                DRILLTECH LIMITED
+              </span>
             </h1>
             <p className="text-xl md:text-2xl text-white/90 mb-8 font-light">
               Water King — Borehole &amp; Drilling Experts
