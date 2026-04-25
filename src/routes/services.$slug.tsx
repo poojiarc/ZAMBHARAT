@@ -1,49 +1,32 @@
-import { createFileRoute, Link, notFound } from "@tanstack/react-router";
+import { Link, useParams, Navigate } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 import { ArrowLeft, CheckCircle2, Search, Droplets, Wrench, Building2, Mountain, Cog, Phone, type LucideIcon } from "lucide-react";
 import { getService, services, type Service } from "@/data/services";
 import { useReveal } from "@/hooks/use-reveal";
 
 const icons: Record<Service["icon"], LucideIcon> = { Search, Droplets, Wrench, Building2, Mountain, Cog };
 
-export const Route = createFileRoute("/services/$slug")({
-  loader: ({ params }) => {
-    const service = getService(params.slug);
-    if (!service) throw notFound();
-    return { service };
-  },
-  head: ({ loaderData }) => ({
-    meta: loaderData
-      ? [
-          { title: `${loaderData.service.title} — Water King` },
-          { name: "description", content: loaderData.service.short },
-          { property: "og:title", content: loaderData.service.title },
-          { property: "og:description", content: loaderData.service.short },
-          { property: "og:image", content: loaderData.service.image },
-        ]
-      : [],
-  }),
-  errorComponent: ({ error }) => (
-    <div className="pt-32 container mx-auto px-4 text-center">
-      <p className="text-destructive">{error.message}</p>
-    </div>
-  ),
-  notFoundComponent: () => (
-    <div className="pt-32 container mx-auto px-4 text-center">
-      <h1 className="text-4xl font-bold">Service not found</h1>
-      <Link to="/services" className="mt-6 inline-block text-primary font-semibold">Back to Services</Link>
-    </div>
-  ),
-  component: ServiceDetail,
-});
-
-function ServiceDetail() {
+export default function ServiceDetail() {
   useReveal();
-  const { service } = Route.useLoaderData();
+  const { slug } = useParams();
+  const service = getService(slug || "");
+  
+  if (!service) {
+    return <Navigate to="/services" replace />;
+  }
+
   const Icon = icons[service.icon];
   const others = services.filter((s) => s.slug !== service.slug).slice(0, 3);
 
   return (
     <div>
+      <Helmet>
+        <title>{service.title} — Water King</title>
+        <meta name="description" content={service.short} />
+        <meta property="og:title" content={service.title} />
+        <meta property="og:description" content={service.short} />
+        <meta property="og:image" content={service.image} />
+      </Helmet>
       <section className="relative pt-32 pb-20 overflow-hidden">
         <img src={service.image} alt={service.title} className="absolute inset-0 w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-r from-primary/90 to-primary/60" />
@@ -134,7 +117,7 @@ function ServiceDetail() {
             {others.map((s) => {
               const I = icons[s.icon];
               return (
-                <Link key={s.slug} to="/services/$slug" params={{ slug: s.slug }} className="group bg-card border border-border rounded-2xl p-6 hover:shadow-water hover:-translate-y-1 transition">
+                <Link key={s.slug} to={`/services/${s.slug}`} className="group bg-card border border-border rounded-2xl p-6 hover:shadow-water hover:-translate-y-1 transition">
                   <div className="bg-gradient-water w-12 h-12 rounded-xl flex items-center justify-center mb-3"><I className="h-6 w-6 text-white" /></div>
                   <h3 className="font-bold group-hover:text-primary transition">{s.title}</h3>
                   <p className="text-sm text-muted-foreground mt-1">{s.short}</p>

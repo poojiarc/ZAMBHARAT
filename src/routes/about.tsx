@@ -1,22 +1,9 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 import { Target, Eye, Award, Droplets, Users, Cpu, Zap, Heart, Layers } from "lucide-react";
 import team from "@/assets/about-team.jpg";
 import borehole from "@/assets/svc-borehole.jpg";
 import { useReveal } from "@/hooks/use-reveal";
-
-export const Route = createFileRoute("/about")({
-  head: () => ({
-    meta: [
-      { title: "About Us — Zambharat Drilltech (Water King)" },
-      { name: "description", content: "Zambharat Drilltech Limited (Water King) is a trusted Lusaka-based provider of advanced drilling and water solution services across Zambia." },
-      { property: "og:title", content: "About Zambharat Drilltech — Water King" },
-      { property: "og:description", content: "Our mission, vision and commitment to clean water across Zambia." },
-      { property: "og:image", content: team },
-    ],
-  }),
-  component: AboutPage,
-});
-
 const reasons = [
   { I: Award, t: "Best Quality Service With Affordable Price" },
   { I: Cpu, t: "Modern Equipment & Advanced Technology" },
@@ -26,10 +13,17 @@ const reasons = [
   { I: Layers, t: "End-to-End Water Solutions" },
 ];
 
-function AboutPage() {
+export default function AboutPage() {
   useReveal();
   return (
     <div>
+      <Helmet>
+        <title>About Us — Zambharat Drilltech (Water King)</title>
+        <meta name="description" content="Zambharat Drilltech Limited (Water King) is a trusted Lusaka-based provider of advanced drilling and water solution services across Zambia." />
+        <meta property="og:title" content="About Zambharat Drilltech — Water King" />
+        <meta property="og:description" content="Our mission, vision and commitment to clean water across Zambia." />
+        <meta property="og:image" content={team} />
+      </Helmet>
       <section className="bg-gradient-hero text-white pt-32 pb-20">
         <div className="container mx-auto px-4 text-center animate-fade-up">
           <span className="inline-block glass px-4 py-2 rounded-full text-sm font-semibold mb-4">About Us</span>

@@ -1,24 +1,18 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { Helmet } from "react-helmet-async";
 import { services } from "@/data/services";
 import { ServiceCard } from "@/components/ServiceCard";
 import { useReveal } from "@/hooks/use-reveal";
 
-export const Route = createFileRoute("/services")({
-  head: () => ({
-    meta: [
-      { title: "Our Services — Zambharat Drilltech (Water King)" },
-      { name: "description", content: "Geophysical survey, water borehole drilling up to 300m, pump installation, overhead tank construction, core drilling and mud drilling." },
-      { property: "og:title", content: "Our Services — Water King" },
-      { property: "og:description", content: "Complete water and drilling solutions across Zambia." },
-    ],
-  }),
-  component: ServicesPage,
-});
-
-function ServicesPage() {
+export default function ServicesPage() {
   useReveal();
   return (
     <div>
+      <Helmet>
+        <title>Our Services — Zambharat Drilltech (Water King)</title>
+        <meta name="description" content="Geophysical survey, water borehole drilling up to 300m, pump installation, overhead tank construction, core drilling and mud drilling." />
+        <meta property="og:title" content="Our Services — Water King" />
+        <meta property="og:description" content="Complete water and drilling solutions across Zambia." />
+      </Helmet>
       <section className="bg-gradient-hero text-white pt-32 pb-20">
         <div className="container mx-auto px-4 text-center animate-fade-up">
           <span className="inline-block glass px-4 py-2 rounded-full text-sm font-semibold mb-4">What We Do</span>

@@ -1,20 +1,8 @@
-import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
+import { Helmet } from "react-helmet-async";
 import { MapPin, Mail, Phone, User, Send, MessageSquare } from "lucide-react";
 import { services } from "@/data/services";
 import { useReveal } from "@/hooks/use-reveal";
-
-export const Route = createFileRoute("/contact")({
-  head: () => ({
-    meta: [
-      { title: "Contact Us — Zambharat Drilltech (Water King)" },
-      { name: "description", content: "Contact Zambharat Drilltech Limited for borehole drilling, pump installation and water solutions. Lusaka offices, phones, emails and WhatsApp." },
-      { property: "og:title", content: "Contact Water King" },
-      { property: "og:description", content: "Get a free quote for your drilling project." },
-    ],
-  }),
-  component: ContactPage,
-});
 
 const phones = ["0777 777 337", "0777 777 266", "0777 777 127", "097 246 6666", "077 944 6666", "077 944 9999"];
 const emails = ["zambharatdrilltech@gmail.com", "zambharatagrotec@gmail.com", "svgboreholes@gmail.com"];
@@ -23,7 +11,7 @@ const locations = [
   "Plot No. 25986, Katimamulilo Rd, Olympia Park",
 ];
 
-function ContactPage() {
+export default function ContactPage() {
   useReveal();
   const [form, setForm] = useState({ name: "", email: "", phone: "", service: services[0].title, message: "" });
 
@@ -38,6 +26,12 @@ function ContactPage() {
 
   return (
     <div>
+      <Helmet>
+        <title>Contact Us — Zambharat Drilltech (Water King)</title>
+        <meta name="description" content="Contact Zambharat Drilltech Limited for borehole drilling, pump installation and water solutions. Lusaka offices, phones, emails and WhatsApp." />
+        <meta property="og:title" content="Contact Water King" />
+        <meta property="og:description" content="Get a free quote for your drilling project." />
+      </Helmet>
       <section className="bg-gradient-hero text-white pt-32 pb-20">
         <div className="container mx-auto px-4 text-center animate-fade-up">
           <span className="inline-block glass px-4 py-2 rounded-full text-sm font-semibold mb-4">Get in Touch</span>

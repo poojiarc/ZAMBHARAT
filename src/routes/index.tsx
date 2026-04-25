@@ -1,21 +1,10 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 import { ArrowRight, Award, Cpu, Users, Zap, CheckCircle2, Phone } from "lucide-react";
 import hero from "@/assets/hero-drilling.jpg";
 import { services } from "@/data/services";
 import { ServiceCard } from "@/components/ServiceCard";
 import { useReveal } from "@/hooks/use-reveal";
-
-export const Route = createFileRoute("/")({
-  head: () => ({
-    meta: [
-      { title: "Zambharat Drilltech Limited | Water King — Borehole Drilling Zambia" },
-      { name: "description", content: "Borehole drilling up to 300m, geophysical survey, pump installation, overhead tanks and core drilling. Best quality service with affordable price." },
-      { property: "og:title", content: "Zambharat Drilltech Limited — Water King" },
-      { property: "og:description", content: "Borehole & drilling experts across Zambia." },
-    ],
-  }),
-  component: HomePage,
-});
 
 const why = [
   { icon: Award, title: "Best Quality Service With Affordable Price" },
@@ -24,10 +13,16 @@ const why = [
   { icon: Zap, title: "Reliable & Fast Service" },
 ];
 
-function HomePage() {
+export default function HomePage() {
   useReveal();
   return (
     <div>
+      <Helmet>
+        <title>Zambharat Drilltech Limited | Water King — Borehole Drilling Zambia</title>
+        <meta name="description" content="Borehole drilling up to 300m, geophysical survey, pump installation, overhead tanks and core drilling. Best quality service with affordable price." />
+        <meta property="og:title" content="Zambharat Drilltech Limited — Water King" />
+        <meta property="og:description" content="Borehole & drilling experts across Zambia." />
+      </Helmet>
       {/* Hero */}
       <section className="relative min-h-screen flex items-center overflow-hidden">
         <img src={hero} alt="Borehole drilling rig" className="absolute inset-0 w-full h-full object-cover" />

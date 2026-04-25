@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Link } from "@tanstack/react-router";
+import { Link, NavLink } from "react-router-dom";
 import { Home, Wrench, Info, Phone, Menu, X } from "lucide-react";
 import logo from "@/assets/logo.png";
 
@@ -44,18 +44,21 @@ export function Navbar() {
 
         <div className="hidden md:flex items-center gap-1">
           {links.map(({ to, label, icon: Icon }) => (
-            <Link
+            <NavLink
               key={to}
               to={to}
-              activeOptions={{ exact: to === "/" }}
-              activeProps={{ className: "bg-primary text-primary-foreground" }}
-              className={`flex items-center gap-2 px-4 py-2 rounded-full text-sm font-semibold transition hover:bg-white/15 ${
-                scrolled ? "text-foreground hover:bg-primary/10" : "text-white drop-shadow"
-              }`}
+              end={to === "/"}
+              className={({ isActive }) =>
+                `flex items-center gap-2 px-4 py-2 rounded-full text-sm font-semibold transition hover:bg-white/15 ${
+                  isActive ? "bg-primary text-primary-foreground" : ""
+                } ${
+                  scrolled ? "text-foreground hover:bg-primary/10" : "text-white drop-shadow"
+                }`
+              }
             >
               <Icon className="h-4 w-4" />
               {label}
-            </Link>
+            </NavLink>
           ))}
           <Link
             to="/contact"
@@ -78,17 +81,20 @@ export function Navbar() {
         <div className="md:hidden glass border-t border-border animate-fade-up">
           <div className="container mx-auto px-4 py-4 flex flex-col gap-2">
             {links.map(({ to, label, icon: Icon }) => (
-              <Link
+              <NavLink
                 key={to}
                 to={to}
                 onClick={() => setOpen(false)}
-                activeOptions={{ exact: to === "/" }}
-                activeProps={{ className: "bg-primary text-primary-foreground" }}
-                className="flex items-center gap-3 px-4 py-3 rounded-lg font-medium hover:bg-primary/10 transition"
+                end={to === "/"}
+                className={({ isActive }) =>
+                  `flex items-center gap-3 px-4 py-3 rounded-lg font-medium hover:bg-primary/10 transition ${
+                    isActive ? "bg-primary text-primary-foreground" : ""
+                  }`
+                }
               >
                 <Icon className="h-5 w-5" />
                 {label}
-              </Link>
+              </NavLink>
             ))}
           </div>
         </div>

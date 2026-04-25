@@ -1,4 +1,4 @@
-import { Link } from "@tanstack/react-router";
+import { Link } from "react-router-dom";
 import { Search, Droplets, Wrench, Building2, Mountain, Cog, ArrowRight, type LucideIcon } from "lucide-react";
 import type { Service } from "@/data/services";
 
@@ -8,8 +8,7 @@ export function ServiceCard({ service }: { service: Service }) {
   const Icon = icons[service.icon];
   return (
     <Link
-      to="/services/$slug"
-      params={{ slug: service.slug }}
+      to={`/services/${service.slug}`}
       className="group reveal block bg-card rounded-2xl overflow-hidden shadow-md hover:shadow-water hover:-translate-y-2 transition-all duration-500 border border-border"
     >
       <div className="relative h-48 overflow-hidden">
