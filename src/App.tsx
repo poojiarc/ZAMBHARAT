@@ -9,6 +9,7 @@ import AboutPage from "@/routes/about";
 import ServicesPage from "@/routes/services";
 import ServiceDetail from "@/routes/services.$slug";
 import ContactPage from "@/routes/contact";
+import GalleryPage from "@/routes/gallery";
 
 function NotFound() {
   return (
@@ -36,6 +37,7 @@ export default function App() {
           <Route path="/services" element={<ServicesPage />} />
           <Route path="/services/:slug" element={<ServiceDetail />} />
           <Route path="/contact" element={<ContactPage />} />
+          <Route path="/gallery" element={<GalleryPage />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>

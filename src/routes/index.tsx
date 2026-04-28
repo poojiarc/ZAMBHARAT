@@ -18,9 +18,9 @@ export default function HomePage() {
   return (
     <div>
       <Helmet>
-        <title>Zambharat Drilltech Limited | Water King — Borehole Drilling Zambia</title>
+        <title>Zambharat Drill tech Limited | SAVE WATER SAVE LIFE — Borehole Drilling Zambia</title>
         <meta name="description" content="Borehole drilling up to 300m, geophysical survey, pump installation, overhead tanks and core drilling. Best quality service with affordable price." />
-        <meta property="og:title" content="Zambharat Drilltech Limited — Water King" />
+        <meta property="og:title" content="Zambharat Drill tech Limited — SAVE WATER SAVE LIFE" />
         <meta property="og:description" content="Borehole & drilling experts across Zambia." />
       </Helmet>
       {/* Hero */}
@@ -33,19 +33,19 @@ export default function HomePage() {
         <div className="relative container mx-auto px-4 py-32 text-white">
           <div className="max-w-3xl mx-auto text-center animate-fade-up">
             <span className="inline-block glass px-4 py-2 rounded-full text-sm font-semibold mb-6 text-white">
-              💧 Water King — Trusted Borehole Experts
+              💧 SAVE WATER SAVE LIFE — Trusted Borehole Experts
             </span>
             <h1 className="text-4xl sm:text-5xl md:text-7xl font-black leading-[1.05] mb-4 tracking-tight drop-shadow-[0_4px_20px_rgba(0,0,0,0.6)]">
               <span className="block drop-shadow-[0_4px_10px_rgba(255,255,255,0.2)]">
-                <span className="text-[#3F51B5]">ZAM</span>
+                <span className="text-[#3F51B5] text-zam-highlight">ZAM</span>
                 <span className="bg-gradient-to-r from-[#F97316] to-[#EF4444] bg-clip-text text-transparent">
                   BHARAT
                 </span>
               </span>
-              <span className="block text-white">DRILLTECH LIMITED</span>
+              <span className="block text-white">DRILL TECH LIMITED</span>
             </h1>
             <p className="text-xl md:text-2xl text-white/90 mb-8 font-light">
-              Water King — Borehole &amp; Drilling Experts
+              SAVE WATER SAVE LIFE — Borehole &amp; Drilling Experts
             </p>
             <div className="flex flex-wrap gap-4 justify-center">
               <Link to="/contact" className="bg-gradient-sunset px-8 py-4 rounded-full font-bold shadow-water hover:scale-105 transition flex items-center gap-2">
@@ -65,7 +65,7 @@ export default function HomePage() {
           <span className="text-accent font-bold uppercase text-sm tracking-wider">About Us</span>
           <h2 className="text-3xl md:text-5xl font-black mt-2 mb-6 text-foreground">Bringing clean water to every doorstep.</h2>
           <p className="text-muted-foreground text-lg leading-relaxed mb-4">
-            Zambharat Drilltech Limited — known as <strong className="text-primary">Water King</strong> — is a leading Zambian drilling company delivering professional borehole drilling, geophysical surveys, pump installation and overhead tank construction.
+            Zambharat Drill tech Limited — known as <strong className="text-primary">SAVE WATER SAVE LIFE</strong> — is a leading Zambian drilling company delivering professional borehole drilling, geophysical surveys, pump installation and overhead tank construction.
           </p>
           <p className="text-muted-foreground leading-relaxed mb-6">
             With years of expertise, modern machinery and a dedicated team led by Mr. S V GOUD, we provide reliable water solutions for households, farms, schools and industries across the country.
@@ -107,7 +107,7 @@ export default function HomePage() {
       <section className="container mx-auto px-4 py-20">
         <div className="text-center max-w-2xl mx-auto mb-12 reveal">
           <span className="text-accent font-bold uppercase text-sm tracking-wider">Why Choose Us</span>
-          <h2 className="text-3xl md:text-5xl font-black mt-2 mb-4 text-foreground">The Water King Difference</h2>
+          <h2 className="text-3xl md:text-5xl font-black mt-2 mb-4 text-foreground">The SAVE WATER SAVE LIFE Difference</h2>
         </div>
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {why.map(({ icon: Icon, title }) => (

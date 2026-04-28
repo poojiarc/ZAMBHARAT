@@ -1,12 +1,13 @@
 import { useState, useEffect } from "react";
 import { Link, NavLink } from "react-router-dom";
-import { Home, Wrench, Info, Phone, Menu, X } from "lucide-react";
+import { Home, Wrench, Info, Phone, Menu, X, Image } from "lucide-react";
 import logo from "@/assets/logo.png";
 
 const links = [
   { to: "/", label: "Home", icon: Home },
   { to: "/services", label: "Services", icon: Wrench },
   { to: "/about", label: "About", icon: Info },
+  { to: "/gallery", label: "Gallery", icon: Image },
   { to: "/contact", label: "Contact", icon: Phone },
 ] as const;
 
@@ -23,26 +24,24 @@ export function Navbar() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? "glass shadow-lg" : "bg-transparent"
-      }`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? "glass shadow-lg" : "bg-transparent"
+        }`}
     >
       <nav className="container mx-auto flex items-center justify-between px-4 py-3">
         <Link to="/" className="flex items-center gap-3 group">
-          <img src={logo} alt="Zambharat Drilltech Limited" className="h-12 w-12 rounded-full ring-2 ring-white/60 group-hover:ring-accent transition shadow-md" />
+          <img src={logo} alt="Zambharat Drill tech Limited" className="h-12 w-12 rounded-full ring-2 ring-white/60 group-hover:ring-accent transition shadow-md" />
           <div className="hidden sm:block leading-tight">
             <div
-              className={`font-black text-base tracking-tight transition-colors ${
-                scrolled ? "" : "drop-shadow-[0_2px_6px_rgba(0,0,0,0.5)]"
-              }`}
+              className={`font-black text-base tracking-tight transition-colors ${scrolled ? "" : "drop-shadow-[0_2px_6px_rgba(0,0,0,0.5)]"
+                }`}
             >
               <span className={scrolled ? "text-[#253284]" : "text-white"}>ZAM</span>
               <span className="text-[#F97316]">BHARAT</span>
               <span className={scrolled ? "text-[#253284]" : "text-white"}>
-                {" "}DRILLTECH
+                {" "}DRILL TECH
               </span>
             </div>
-            <div className="text-xs text-accent font-bold drop-shadow-[0_1px_3px_rgba(0,0,0,0.4)]">Water King</div>
+            <div className="text-xs text-accent font-bold drop-shadow-[0_1px_3px_rgba(0,0,0,0.4)]">SAVE WATER SAVE LIFE</div>
           </div>
         </Link>
 
@@ -53,10 +52,8 @@ export function Navbar() {
               to={to}
               end={to === "/"}
               className={({ isActive }) =>
-                `flex items-center gap-2 px-4 py-2 rounded-full text-sm font-semibold transition hover:bg-white/15 ${
-                  isActive ? "bg-primary text-primary-foreground" : ""
-                } ${
-                  scrolled ? "text-foreground hover:bg-primary/10" : "text-white drop-shadow"
+                `flex items-center gap-2 px-4 py-2 rounded-full text-sm font-semibold transition hover:bg-white/15 ${isActive ? "bg-primary text-primary-foreground" : ""
+                } ${scrolled ? "text-foreground hover:bg-primary/10" : "text-white drop-shadow"
                 }`
               }
             >
@@ -91,8 +88,7 @@ export function Navbar() {
                 onClick={() => setOpen(false)}
                 end={to === "/"}
                 className={({ isActive }) =>
-                  `flex items-center gap-3 px-4 py-3 rounded-lg font-medium hover:bg-primary/10 transition ${
-                    isActive ? "bg-primary text-primary-foreground" : ""
+                  `flex items-center gap-3 px-4 py-3 rounded-lg font-medium hover:bg-primary/10 transition ${isActive ? "bg-primary text-primary-foreground" : ""
                   }`
                 }
               >

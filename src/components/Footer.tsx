@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Home, Wrench, Info, Phone, Mail, MapPin, Heart } from "lucide-react";
+import { Home, Wrench, Info, Phone, Mail, MapPin, Heart, Image } from "lucide-react";
 import logo from "@/assets/logo.png";
 import { SocialLinks } from "@/components/SocialLinks";
 
@@ -12,13 +12,13 @@ export function Footer() {
             <img src={logo} alt="Logo" className="h-14 w-14 rounded-full ring-2 ring-white/40" />
             <div>
               <div className="font-bold">
-                <span className="text-[#3F51B5]">ZAM</span>
+                <span className="text-[#3F51B5] text-zam-highlight">ZAM</span>
                 <span className="bg-gradient-to-r from-[#F97316] to-[#EF4444] bg-clip-text text-transparent">
                   BHARAT
                 </span>
-                {" DRILLTECH"}
+                {" DRILL TECH"}
               </div>
-              <div className="text-xs text-accent">Water King</div>
+              <div className="text-xs text-accent">SAVE WATER SAVE LIFE</div>
             </div>
           </div>
           <p className="text-sm text-white/80 mb-3">
@@ -30,7 +30,7 @@ export function Footer() {
         <div>
           <h4 className="font-bold mb-4">Quick Links</h4>
           <ul className="space-y-2 text-sm">
-            {[{ to: "/", l: "Home", I: Home }, { to: "/services", l: "Services", I: Wrench }, { to: "/about", l: "About", I: Info }, { to: "/contact", l: "Contact", I: Phone }].map(({ to, l, I }) => (
+            {[{ to: "/", l: "Home", I: Home }, { to: "/services", l: "Services", I: Wrench }, { to: "/about", l: "About", I: Info }, { to: "/gallery", l: "Gallery", I: Image }, { to: "/contact", l: "Contact", I: Phone }].map(({ to, l, I }) => (
               <li key={to}>
                 <Link to={to} className="flex items-center gap-2 text-white/85 hover:text-accent transition">
                   <I className="h-4 w-4" /> {l}
@@ -50,14 +50,20 @@ export function Footer() {
           <h4 className="font-bold mb-4">Contact</h4>
           <ul className="space-y-3 text-sm text-white/85">
             <li className="flex gap-2"><MapPin className="h-4 w-4 mt-0.5 shrink-0 text-accent" /> Plot No. 29, Acacia Avenue, Avondale, Lusaka</li>
-            <li className="flex gap-2"><Phone className="h-4 w-4 mt-0.5 shrink-0 text-accent" /> 0777 777 337</li>
-            <li className="flex gap-2"><Mail className="h-4 w-4 mt-0.5 shrink-0 text-accent" /> zambharatdrilltech@gmail.com</li>
+            <li className="flex gap-2">
+              <Phone className="h-4 w-4 mt-0.5 shrink-0 text-accent" />
+              <a href="tel:0777777337" className="hover:text-accent transition">0777 777 337</a>
+            </li>
+            <li className="flex gap-2">
+              <Mail className="h-4 w-4 mt-0.5 shrink-0 text-accent" />
+              <a href="mailto:zambharatdrilltech@gmail.com?subject=Enquiry from Website" className="hover:text-accent transition break-all">zambharatdrilltech@gmail.com</a>
+            </li>
           </ul>
         </div>
       </div>
 
       <div className="container mx-auto px-4 mt-4 pt-8 pb-8 border-t border-white/10 flex flex-col gap-3 justify-center items-center text-xs text-white/60 text-center">
-        <div>© {new Date().getFullYear()} ZAMBHARATDRILL TECH LIMITED. All rights reserved.</div>
+        <div>© {new Date().getFullYear()} ZAMBHARAT DRILL TECH LIMITED. All rights reserved.</div>
         <div className="flex justify-center items-center gap-1">
           Made with <Heart className="inline h-4 w-4 text-red-500 mx-1 fill-red-500" /> by
           <a

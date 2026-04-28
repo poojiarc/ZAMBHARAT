@@ -18,16 +18,16 @@ export default function AboutPage() {
   return (
     <div>
       <Helmet>
-        <title>About Us — Zambharat Drilltech (Water King)</title>
-        <meta name="description" content="Zambharat Drilltech Limited (Water King) is a trusted Lusaka-based provider of advanced drilling and water solution services across Zambia." />
-        <meta property="og:title" content="About Zambharat Drilltech — Water King" />
+        <title>About Us — Zambharat DRILL TECH (SAVE WATER SAVE LIFE)</title>
+        <meta name="description" content="Zambharat Drill tech Limited (SAVE WATER SAVE LIFE) is a trusted Lusaka-based provider of advanced drilling and water solution services across Zambia." />
+        <meta property="og:title" content="About Zambharat DRILL TECH — SAVE WATER SAVE LIFE" />
         <meta property="og:description" content="Our mission, vision and commitment to clean water across Zambia." />
         <meta property="og:image" content={team} />
       </Helmet>
       <section className="bg-gradient-hero text-white pt-32 pb-20">
         <div className="container mx-auto px-4 text-center animate-fade-up">
           <span className="inline-block glass px-4 py-2 rounded-full text-sm font-semibold mb-4">About Us</span>
-          <h1 className="text-4xl md:text-6xl font-black mb-4">About Zambharat Drilltech Limited</h1>
+          <h1 className="text-4xl md:text-6xl font-black mb-4">About Zambharat Drill tech Limited</h1>
           <p className="text-xl text-white/90 max-w-2xl mx-auto italic">"Drilling Excellence, Delivering Water"</p>
         </div>
       </section>
@@ -37,7 +37,7 @@ export default function AboutPage() {
           <span className="text-accent font-bold uppercase text-sm tracking-wider">Who We Are</span>
           <h2 className="text-3xl md:text-4xl font-black mt-2 mb-6 text-foreground">A Trusted Name in Water Solutions</h2>
           <p className="text-muted-foreground leading-relaxed mb-4">
-            Zambharat Drilltech Limited (<strong className="text-primary">Water King</strong>) is a trusted provider of advanced drilling and water solution services based in Lusaka, Zambia. With a strong commitment to quality, innovation, and customer satisfaction, we specialize in delivering reliable and cost-effective borehole drilling and water management solutions for residential, commercial, agricultural, and industrial needs.
+            Zambharat DRILL TECH Limited (<strong className="text-primary">SAVE WATER SAVE LIFE</strong>) is a trusted provider of advanced drilling and water solution services based in Lusaka, Zambia. With a strong commitment to quality, innovation, and customer satisfaction, we specialize in delivering reliable and cost-effective borehole drilling and water management solutions for residential, commercial, agricultural, and industrial needs.
           </p>
           <p className="text-muted-foreground leading-relaxed mb-4">
             Our company uses modern drilling technology, skilled technicians, and scientifically backed methods to ensure accurate results and long-lasting water solutions. From initial site surveys to full system installation, we handle every project with precision and professionalism.
@@ -80,7 +80,7 @@ export default function AboutPage() {
         </div>
         <div className="reveal order-1 lg:order-2">
           <span className="text-accent font-bold uppercase text-sm tracking-wider">Why Choose Us</span>
-          <h2 className="text-3xl md:text-4xl font-black mt-2 mb-6 text-foreground">The Water King Difference</h2>
+          <h2 className="text-3xl md:text-4xl font-black mt-2 mb-6 text-foreground">The SAVE WATER SAVE LIFE Difference</h2>
           <div className="grid sm:grid-cols-2 gap-4">
             {reasons.map(({ I, t }) => (
               <div key={t} className="flex gap-3 bg-card border border-border rounded-xl p-4 hover:shadow-water transition">
