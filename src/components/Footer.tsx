@@ -11,14 +11,17 @@ export function Footer() {
           <div className="flex items-center gap-3 mb-4">
             <img src={logo} alt="Logo" className="h-14 w-14 rounded-full ring-2 ring-white/40" />
             <div>
-              <div className="font-bold">
-                <span className="text-[#3F51B5] text-zam-highlight">ZAM</span>
-                <span className="bg-gradient-to-r from-[#F97316] to-[#EF4444] bg-clip-text text-transparent">
-                  BHARAT
+              <div className="font-black text-2xl tracking-tight leading-none mb-1">
+                <span className="text-[#1A237E] text-zam-highlight">ZAM</span>
+                <span className="relative inline-grid">
+                  <span className="col-start-1 row-start-1 text-transparent text-zam-highlight" aria-hidden="true">BHARAT</span>
+                  <span className="col-start-1 row-start-1 z-10 bg-gradient-to-r from-red-500 to-orange-500 bg-clip-text text-transparent">BHARAT</span>
                 </span>
-                {" DRILL TECH"}
+                <span className="block text-drill-highlight text-[1.1rem] mt-1 drop-shadow-md">DRILL TECH LIMITED</span>
               </div>
-              <div className="text-xs text-accent">Water King</div>
+              <div className="inline-block mt-2 text-sm text-accent font-bold tracking-wide drop-shadow-md" style={{ WebkitTextStroke: '0.5px #fff' }}>
+                SAVE WATER SAVE LIFE
+              </div>
             </div>
           </div>
           <p className="text-sm text-white/80 mb-3">

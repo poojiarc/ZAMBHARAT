@@ -38,7 +38,10 @@ export default function HomePage() {
             <h1 className="text-4xl sm:text-5xl md:text-7xl font-black leading-[1.05] mb-4 tracking-tight drop-shadow-[0_4px_20px_rgba(0,0,0,0.6)]">
               <div className="block mb-2">
                 <span className="text-[#1A237E] text-zam-highlight">ZAM</span>
-                <span className="text-[#F97316] text-zam-highlight">BHARAT</span>
+                <span className="relative inline-grid">
+                  <span className="col-start-1 row-start-1 text-transparent text-zam-highlight" aria-hidden="true">BHARAT</span>
+                  <span className="col-start-1 row-start-1 z-10 bg-gradient-to-r from-red-500 to-orange-500 bg-clip-text text-transparent">BHARAT</span>
+                </span>
               </div>
               <span className="block text-drill-highlight">DRILL TECH LIMITED</span>
             </h1>
