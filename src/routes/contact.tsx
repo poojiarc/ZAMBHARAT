@@ -27,16 +27,16 @@ export default function ContactPage() {
   return (
     <div>
       <Helmet>
-        <title>Contact Us — Zambharat Drilltech (SAVE WATER SAVE LIFE)</title>
+        <title>Contact Us — Zambharat Drilltech (Water King)</title>
         <meta name="description" content="Contact Zambharat Drilltech Limited for borehole drilling, pump installation and water solutions. Lusaka offices, phones, emails and WhatsApp." />
-        <meta property="og:title" content="Contact SAVE WATER SAVE LIFE" />
+        <meta property="og:title" content="Contact Water King" />
         <meta property="og:description" content="Get a free quote for your drilling project." />
       </Helmet>
       <section className="bg-gradient-hero text-white pt-32 pb-20">
         <div className="container mx-auto px-4 text-center animate-fade-up">
           <span className="inline-block glass px-4 py-2 rounded-full text-sm font-semibold mb-4">Get in Touch</span>
           <h1 className="text-4xl md:text-6xl font-black mb-4">Contact Us</h1>
-          <p className="text-xl text-white/90 max-w-2xl mx-auto">Talk to <strong>Mr. S V GOUD</strong> and the SAVE WATER SAVE LIFE team about your project today.</p>
+          <p className="text-xl text-white/90 max-w-2xl mx-auto">Talk to <strong>Mr. S V GOUD</strong> and the ZAMBHARATteam about your project today.</p>
         </div>
       </section>
 
@@ -117,7 +117,7 @@ export default function ContactPage() {
         <div className="reveal bg-gradient-hero text-white rounded-3xl p-10 md:p-14 text-center shadow-water">
           <h2 className="text-3xl md:text-4xl font-black mb-3">Follow Us</h2>
           <p className="text-white/85 max-w-xl mx-auto mb-6">
-            Stay connected with SAVE WATER SAVE LIFE on social media for project updates, drilling tips and behind-the-scenes.
+            Stay connected with ZAMBHARAT on social media for project updates, drilling tips and behind-the-scenes.
           </p>
           <div className="flex justify-center">
             <SocialLinks variant="light" />

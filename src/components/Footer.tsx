@@ -18,7 +18,7 @@ export function Footer() {
                 </span>
                 {" DRILL TECH"}
               </div>
-              <div className="text-xs text-accent">SAVE WATER SAVE LIFE</div>
+              <div className="text-xs text-accent">Water King</div>
             </div>
           </div>
           <p className="text-sm text-white/80 mb-3">

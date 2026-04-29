@@ -8,9 +8,9 @@ export default function ServicesPage() {
   return (
     <div>
       <Helmet>
-        <title>Our Services — Zambharat Drill tech (SAVE WATER SAVE LIFE)</title>
+        <title>Our Services — Zambharat Drill tech (Water King)</title>
         <meta name="description" content="Geophysical survey, water borehole drilling up to 300m, pump installation, overhead tank construction, core drilling and mud drilling." />
-        <meta property="og:title" content="Our Services — SAVE WATER SAVE LIFE" />
+        <meta property="og:title" content="Our Services — Water King" />
         <meta property="og:description" content="Complete water and drilling solutions across Zambia." />
       </Helmet>
       <section className="bg-gradient-hero text-white pt-32 pb-20">

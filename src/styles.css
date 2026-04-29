@@ -117,10 +117,20 @@
 
 .text-zam-highlight {
   text-shadow: 
-    -1px -1px 0 #fff,  
-     1px -1px 0 #fff,
-    -1px  1px 0 #fff,
-     1px  1px 0 #fff,
-     0 0 8px rgba(255,255,255,0.8);
+    -1.5px -1.5px 0 #fff,  
+     1.5px -1.5px 0 #fff,
+    -1.5px  1.5px 0 #fff,
+     1.5px  1.5px 0 #fff,
+     0 0 10px rgba(255,255,255,0.4);
+}
+
+.text-drill-highlight {
+  color: #FFEB3B;
+  text-shadow: 
+    -2px -2px 0 #fff,  
+     2px -2px 0 #fff,
+    -2px  2px 0 #fff,
+     2px  2px 0 #fff,
+     0 5px 15px rgba(0,0,0,0.3);
 }
 

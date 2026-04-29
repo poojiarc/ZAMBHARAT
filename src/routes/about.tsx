@@ -18,9 +18,9 @@ export default function AboutPage() {
   return (
     <div>
       <Helmet>
-        <title>About Us — Zambharat DRILL TECH (SAVE WATER SAVE LIFE)</title>
-        <meta name="description" content="Zambharat Drill tech Limited (SAVE WATER SAVE LIFE) is a trusted Lusaka-based provider of advanced drilling and water solution services across Zambia." />
-        <meta property="og:title" content="About Zambharat DRILL TECH — SAVE WATER SAVE LIFE" />
+        <title>About Us — Zambharat DRILL TECH (Water King)</title>
+        <meta name="description" content="Zambharat Drill tech Limited (Water King) is a trusted Lusaka-based provider of advanced drilling and water solution services across Zambia." />
+        <meta property="og:title" content="About Zambharat DRILL TECH — Water King" />
         <meta property="og:description" content="Our mission, vision and commitment to clean water across Zambia." />
         <meta property="og:image" content={team} />
       </Helmet>
@@ -37,7 +37,7 @@ export default function AboutPage() {
           <span className="text-accent font-bold uppercase text-sm tracking-wider">Who We Are</span>
           <h2 className="text-3xl md:text-4xl font-black mt-2 mb-6 text-foreground">A Trusted Name in Water Solutions</h2>
           <p className="text-muted-foreground leading-relaxed mb-4">
-            Zambharat DRILL TECH Limited (<strong className="text-primary">SAVE WATER SAVE LIFE</strong>) is a trusted provider of advanced drilling and water solution services based in Lusaka, Zambia. With a strong commitment to quality, innovation, and customer satisfaction, we specialize in delivering reliable and cost-effective borehole drilling and water management solutions for residential, commercial, agricultural, and industrial needs.
+            Zambharat DRILL TECH Limited (<strong className="text-primary">Water King</strong>) is a trusted provider of advanced drilling and water solution services based in Lusaka, Zambia. With a strong commitment to quality, innovation, and customer satisfaction, we specialize in delivering reliable and cost-effective borehole drilling and water management solutions for residential, commercial, agricultural, and industrial needs.
           </p>
           <p className="text-muted-foreground leading-relaxed mb-4">
             Our company uses modern drilling technology, skilled technicians, and scientifically backed methods to ensure accurate results and long-lasting water solutions. From initial site surveys to full system installation, we handle every project with precision and professionalism.
@@ -80,7 +80,7 @@ export default function AboutPage() {
         </div>
         <div className="reveal order-1 lg:order-2">
           <span className="text-accent font-bold uppercase text-sm tracking-wider">Why Choose Us</span>
-          <h2 className="text-3xl md:text-4xl font-black mt-2 mb-6 text-foreground">The SAVE WATER SAVE LIFE Difference</h2>
+          <h2 className="text-3xl md:text-4xl font-black mt-2 mb-6 text-foreground">The ZAMBHARAT Difference</h2>
           <div className="grid sm:grid-cols-2 gap-4">
             {reasons.map(({ I, t }) => (
               <div key={t} className="flex gap-3 bg-card border border-border rounded-xl p-4 hover:shadow-water transition">

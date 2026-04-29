@@ -21,7 +21,7 @@ export default function ServiceDetail() {
   return (
     <div>
       <Helmet>
-        <title>{service.title} — SAVE WATER SAVE LIFE</title>
+        <title>{service.title} — Water King</title>
         <meta name="description" content={service.short} />
         <meta property="og:title" content={service.title} />
         <meta property="og:description" content={service.short} />
