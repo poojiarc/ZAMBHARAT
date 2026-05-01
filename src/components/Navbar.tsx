@@ -30,9 +30,9 @@ export function Navbar() {
       <nav className="container mx-auto flex items-center justify-between px-4 py-3">
         <Link to="/" className="flex items-center gap-3 group">
           <img src={logo} alt="Zambharat Drill tech Limited" className="h-12 w-12 rounded-full ring-2 ring-white/60 group-hover:ring-accent transition shadow-md" />
-          <div className="hidden sm:block leading-tight">
+          <div className="block leading-tight">
             <div
-              className={`font-black text-base tracking-tight transition-colors ${scrolled ? "" : "drop-shadow-[0_2px_6px_rgba(0,0,0,0.5)]"
+              className={`font-black text-[13px] sm:text-base tracking-tight transition-colors ${scrolled ? "" : "drop-shadow-[0_2px_6px_rgba(0,0,0,0.5)]"
                 }`}
             >
               <span className={scrolled ? "text-[#253284]" : "text-white"}>ZAM</span>
@@ -41,7 +41,7 @@ export function Navbar() {
                 {" "}DRILL TECH
               </span>
             </div>
-            <div className="text-xs text-accent font-bold drop-shadow-[0_1px_3px_rgba(0,0,0,0.4)]">SAVE WATER SAVE LIFE</div>
+            <div className="text-[10px] sm:text-xs text-accent font-bold drop-shadow-[0_1px_3px_rgba(0,0,0,0.4)]">SAVE WATER SAVE LIFE</div>
           </div>
         </Link>
 

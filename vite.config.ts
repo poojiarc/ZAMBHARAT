@@ -9,4 +9,13 @@ export default defineConfig({
     tailwindcss(),
     tsconfigPaths(),
   ],
+
+  server: {
+    host: true, // allow external access (important for ngrok)
+    port: 5173, // standard vite port (change if needed)
+
+    allowedHosts: [
+      "timmy-semimature-unpoisonously.ngrok-free.dev"
+    ]
+  }
 });

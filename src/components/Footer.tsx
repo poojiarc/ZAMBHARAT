@@ -11,12 +11,12 @@ export function Footer() {
           <div className="flex items-center gap-3 mb-4">
             <img src={logo} alt="Logo" className="h-14 w-14 rounded-full ring-2 ring-white/40" />
             <div>
-              <div className="font-black text-base tracking-tight leading-none mb-1 whitespace-nowrap">
-                <span className="text-[#1A237E]" style={{ WebkitTextStroke: '1px #fff', filter: 'drop-shadow(0 2px 2px rgba(0,0,0,0.4))' }}>ZAM</span>
-                <span className="text-[#FF7A00] ml-0.5" style={{ WebkitTextStroke: '1px #fff', filter: 'drop-shadow(0 2px 2px rgba(0,0,0,0.4))' }}>BHARAT</span>
-                <span className="text-[#FFEB3B] ml-1" style={{ WebkitTextStroke: '1px #fff', filter: 'drop-shadow(0 2px 2px rgba(0,0,0,0.4))' }}>DRILL TECH</span>
+              <div className="font-black text-[13px] sm:text-base tracking-tight leading-none mb-1 whitespace-nowrap">
+                <span className="text-[#1A237E]" style={{ textShadow: '-1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff, 0 3px 5px rgba(0,0,0,0.8)' }}>ZAM</span>
+                <span className="text-[#FF7A00] ml-0.5" style={{ textShadow: '-1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff, 0 3px 5px rgba(0,0,0,0.8)' }}>BHARAT</span>
+                <span className="text-[#FFEB3B] ml-1" style={{ textShadow: '-1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff, 0 3px 5px rgba(0,0,0,0.8)' }}>DRILL TECH</span>
               </div>
-              <div className="text-xs text-[#FF7A00] font-bold tracking-wide" style={{ WebkitTextStroke: '0.5px #fff', filter: 'drop-shadow(0 1px 2px rgba(0,0,0,0.4))' }}>
+              <div className="text-[10px] sm:text-xs text-[#FF7A00] font-bold tracking-wide" style={{ textShadow: '-0.5px -0.5px 0 #fff, 0.5px -0.5px 0 #fff, -0.5px 0.5px 0 #fff, 0.5px 0.5px 0 #fff, 0 2px 4px rgba(0,0,0,0.8)' }}>
                 SAVE WATER SAVE LIFE
               </div>
             </div>
