@@ -35,16 +35,25 @@ export default function HomePage() {
             <span className="inline-block glass px-6 py-2 rounded-full text-sm font-bold mb-6 text-white shadow-lg">
               💧 We Drill You Chill — Trusted Borehole Experts
             </span>
-            <h1 className="text-4xl sm:text-5xl md:text-7xl font-black leading-[1.05] mb-4 tracking-tight drop-shadow-[0_4px_20px_rgba(0,0,0,0.6)]">
-              <div className="block mb-2">
-                <span className="text-[#1A237E] text-zam-highlight">ZAM</span>
+            <h1 className="text-5xl sm:text-7xl md:text-8xl font-black leading-[1.1] mb-8 tracking-tight text-center drop-shadow-2xl">
+              <div className="flex justify-center items-center mb-6 flex-wrap whitespace-nowrap">
                 <span className="relative inline-grid">
-                  <span className="col-start-1 row-start-1 text-transparent text-zam-highlight" aria-hidden="true">BHARAT</span>
-                  <span className="col-start-1 row-start-1 z-10 bg-gradient-to-r from-red-500 to-orange-500 bg-clip-text text-transparent">BHARAT</span>
+                  <span className="col-start-1 row-start-1 text-transparent text-3d-zam" aria-hidden="true">ZAM</span>
+                  <span className="col-start-1 row-start-1 z-10 text-[#1A237E]">ZAM</span>
+                </span>
+                <span className="relative inline-grid">
+                  <span className="col-start-1 row-start-1 text-transparent text-3d-bharat" aria-hidden="true">BHARAT</span>
+                  <span className="col-start-1 row-start-1 z-10 bg-gradient-to-r from-red-500 via-orange-500 to-yellow-400 bg-clip-text text-transparent">BHARAT</span>
                 </span>
               </div>
-              <span className="block text-drill-highlight">DRILL TECH LIMITED</span>
+              <div className="flex justify-center items-center flex-wrap whitespace-nowrap">
+                <span className="relative inline-grid">
+                  <span className="col-start-1 row-start-1 text-transparent text-3d-drill" aria-hidden="true">DRILL TECH LIMITED</span>
+                  <span className="col-start-1 row-start-1 z-10 text-[#FFEB3B]">DRILL TECH LIMITED</span>
+                </span>
+              </div>
             </h1>
+
             <p className="text-xl md:text-2xl text-white font-bold mb-8 tracking-wide drop-shadow-md">
               WATER KING — Borehole Drilling & Exploration
             </p>

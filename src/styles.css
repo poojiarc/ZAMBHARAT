@@ -150,14 +150,29 @@
   transform: translateY(0);
 }
 
-.text-zam-highlight {
-  -webkit-text-stroke: 1.5px #fff;
-  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.4));
+.text-3d-zam {
+  -webkit-text-stroke: 3px #fff;
+  text-shadow: 
+    1px 1px 0 #0d134a, 2px 2px 0 #0d134a, 3px 3px 0 #0d134a, 4px 4px 0 #0d134a, 
+    5px 5px 0 #0d134a, 6px 6px 0 #0d134a, 7px 7px 0 #0d134a, 8px 8px 0 #0d134a, 
+    9px 9px 0 #0d134a, 10px 10px 0 #0d134a, 11px 11px 0 #0d134a, 12px 12px 0 #0d134a,
+    13px 13px 0 #0d134a, 14px 14px 0 #0d134a;
 }
 
-.text-drill-highlight {
-  color: #FFEB3B;
-  -webkit-text-stroke: 1.5px #fff;
-  paint-order: stroke fill;
-  filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.3));
+.text-3d-bharat {
+  -webkit-text-stroke: 3px #fff;
+  text-shadow: 
+    1px 1px 0 #b33900, 2px 2px 0 #b33900, 3px 3px 0 #b33900, 4px 4px 0 #b33900, 
+    5px 5px 0 #b33900, 6px 6px 0 #b33900, 7px 7px 0 #b33900, 8px 8px 0 #b33900, 
+    9px 9px 0 #b33900, 10px 10px 0 #b33900, 11px 11px 0 #b33900, 12px 12px 0 #b33900,
+    13px 13px 0 #b33900, 14px 14px 0 #b33900;
+}
+
+.text-3d-drill {
+  -webkit-text-stroke: 3px #fff;
+  text-shadow: 
+    1px 1px 0 #064e3b, 2px 2px 0 #064e3b, 3px 3px 0 #064e3b, 4px 4px 0 #064e3b, 
+    5px 5px 0 #064e3b, 6px 6px 0 #064e3b, 7px 7px 0 #064e3b, 8px 8px 0 #064e3b, 
+    9px 9px 0 #064e3b, 10px 10px 0 #064e3b, 11px 11px 0 #064e3b, 12px 12px 0 #064e3b,
+    13px 13px 0 #064e3b, 14px 14px 0 #064e3b;
 }
