@@ -64,22 +64,7 @@ export function Footer() {
 
       <div className="container mx-auto px-4 mt-4 pt-8 pb-8 border-t border-white/10 flex flex-col gap-3 justify-center items-center text-xs text-white/60 text-center">
         <div>© {new Date().getFullYear()} ZAMBHARAT DRILL TECH LIMITED. All rights reserved.</div>
-        <div className="flex justify-center items-center gap-1">
-          Made with <Heart className="inline h-4 w-4 text-red-500 mx-1 fill-red-500" /> by
-          <a
-            href="https://staffarc.in"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-1 text-orange-400 hover:underline ml-1"
-          >
-            <img
-              src="https://www.staffarc.in/images/Staffarc-logo.png"
-              alt="StaffArc logo"
-              className="h-5 w-5 object-contain"
-            />
-            StaffArc
-          </a>
-        </div>
+
       </div>
     </footer>
   );
